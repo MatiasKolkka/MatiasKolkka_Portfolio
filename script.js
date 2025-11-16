@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const resumeBtn = document.getElementById('resumeDownload');
     if (resumeBtn) {
       resumeBtn.addEventListener('click', function () {
-        // opens resume.pdf (placeholder)
+        // opens resume image (placeholder)
         window.open('resume - Copy.png', '_blank');
       });
     }
