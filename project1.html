@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PayToPrint Fitness Clothing - Matias Kolkka</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body.project-page { padding-top: 96px; background-color: #f8f6f3; }
+
+    .project-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    .project-title {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .project-lead {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 50px;
+      color: #5c4a3d;
+      font-size: 1.1rem;
+    }
+
+    /* Grid for designs */
+    .design-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .design-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .design-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .design-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .design-card .card-body {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .design-card h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body class="project-page">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <a href="index.html"><img src="signature matias kolkka.png" alt="Matias Signature" /></a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="project-content">
+    <h1 class="project-title">Pay-To-Print Fitness Clothing</h1>
+    <p class="project-lead">
+      A few friends and I founded a pay-to-print business called Olympian Studios, where we designed fitness clothing inspired by the Greek philosophy of Stoicism. The business was successful; however, due to a conflict of interest with school policy, it had to be shut down after a few months.
+    </p>
+
+    <div class="design-grid">
+      <!-- Design 1 -->
+      <div class="design-card">
+        <img src="Screenshot 2025-09-08 194026.png" alt="Fitness T-shirt Design 1">
+        <div class="card-body">
+          <h3>Strength Collection Tee</h3>
+        </div>
+      </div>
+
+      <!-- Design 2 -->
+      <div class="design-card">
+        <img src="greek hoodie.jpg" alt="Hoodie Design 2">
+        <div class="card-body">
+          <h3>Discipline Hoodie</h3>
+        </div>
+      </div>
+
+      <!-- Design 3 -->
+      <div class="design-card">
+        <img src="Screenshot 2025-09-08 195138.png" alt="Tank Top Design 3">
+        <div class="card-body">
+          <h3>Endurance Tank</h3>
+        </div>
+      </div>
+
+      <!-- Add more designs here -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Designed & Created by Matias Kolkka</p>
+  </footer>
+</body>
+</html>
