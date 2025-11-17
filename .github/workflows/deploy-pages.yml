@@ -1,10 +1,8 @@
 name: Deploy to GitHub Pages
 
-# --- ADD THIS BLOCK ---
 permissions:
-  contents: write   # Allows pushing to gh-pages
-  pages: write      # Allows GitHub Pages deployment
-# --- END ---
+  contents: write
+  pages: write
 
 on:
   push:
@@ -14,20 +12,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4   # ← Updated to v4
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v4
 
-      - name: Prepare publish directory
-        run: |
-          mkdir -p public
-          rsync -av --exclude='.git' --exclude='.github' --exclude='High School Portfolio-dup-backup*' ./ public/
-        shell: bash
-
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: public
-          force_orphan: true   # ← Optional: cleaner gh-pages history
+          publish_dir: ./
+          force_orphan: true
